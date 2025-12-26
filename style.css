@@ -5,17 +5,23 @@
 
 header {
     background-color: rgb(161, 254, 254);
+     position: sticky;
 }
 
 .head {
     display: flex;
     justify-content: space-between;
     height: 70px;
+   width: 100%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+   position: fixed;
+   top: 0px;
+
 }
 
 .first {
 
-    color: rgb(10, 236, 10);
+    color: rgb(39, 42, 90);
     font-size: 40px;
     margin-left: 20px;
     align-content: center;
@@ -43,56 +49,65 @@ header {
 
 .main {
     align-content: center;
-     background-color: rgb(255, 217, 168);
+    background-color: rgb(255, 217, 168);
     height: 400px;
-    margin: 50px;
+    margin: 120px 70px 70px 70px;
     display: flex;
     box-shadow: 100px;
-    padding: 20px;
+    padding: 40px;
     border-radius: 6px;
-    transition: transform 0.5s; 
-    box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
+    transition: transform 0.5s;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
 
-    
+
 }
+
 .main:hover {
     transform: translate(20px, 10px);
     /* moves right 50px and down 20px */
 }
-.main1{
+
+.main1 {
     height: 0px;
     width: 0px;
     display: flex;
     gap: 10px;
     display: flex;
-    
+
 }
-.main1 img{
+
+.main1 img {
     height: 300px;
     width: 300px;
     object-fit: cover;
-    border-radius: 50%; 
+    border-radius: 50%;
     position: relative;
     margin-top: 40px;
 
+
 }
-.img:nth-child(1){
-top: 0px;
+
+.img:nth-child(1) {
+    top: 0px;
 }
-.img:nth-child(2){
-top: 0px;
-right: 80px;
+
+.img:nth-child(2) {
+    top: 0px;
+    right: 80px;
 }
-.img:nth-child(3){
-top: 0px;
-right: 150px;
+
+.img:nth-child(3) {
+    top: 0px;
+    right: 150px;
 }
+
 .container {
     display: grid;
     justify-content: center;
     grid-template-columns: 350px 350px 350px 350px;
     row-gap: 30px;
     padding-left: 30px;
+
 
 }
 
@@ -102,107 +117,133 @@ right: 150px;
     background-color: rgb(247, 247, 247);
     margin: 5px;
     border-radius: 5px;
-    transition: transform 0.5s; 
-   box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
-    
-   
+    transition: transform 0.5s;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.3);
+
+
 }
 
 .product:hover {
     transform: translate(20px, 10px);
+
     /* moves right 50px and down 20px */
 }
-.product img{
- object-fit: fill;
-  background-size: cover;
-   width: 294px;
-   height:200px;  
-   border-radius: 5px;
-   margin: 3px;
-   
-}
-footer ul{
-    padding-top: 70px;
-    background-color:rgb(19, 26, 34);
+
+.product img {
+    object-fit: fill;
+    background-size: cover;
+    width: 294px;
+    height: 200px;
+    border-radius: 5px;
+    margin: 3px;
 
 }
-footer ul li{
+
+footer ul {
+    padding-top: 70px;
+    background-color: rgb(19, 26, 34);
+
+}
+
+footer ul li {
     list-style: none;
-    row-gap:10px;
-    padding-left: 200px;  
-    font-size: 20px; 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    row-gap: 10px;
+    padding-left: 200px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 10px 0;
     background-color: rgb(19, 26, 34);
     color: rgb(237, 241, 241);
 }
-.foot{
-    border: 2px solid black;
-    margin-top: 20px ;
+
+.foot {
+
+    margin-top: 20px;
     height: 350px;
-    background-color:rgb(19, 26, 34);
+    background-color: rgb(19, 26, 34);
 }
+
 .style {
-  width: 200px  ;
-  display: inline-block;
+    width: 200px;
+    display: inline-block;
     margin-top: 70px;
     align-content: center;
     font-size: 60px;
     margin-left: 20px;
     white-space: nowrap;
+    color: rgb(245, 255, 255);
 }
-.text{
-    background-color:rgb(247, 247, 247);
+
+.text {
+    background-color: rgb(247, 247, 247);
     font-family: sans-serif;
 
 }
-.click{
-    background-color: rgb(139, 241, 203);
+
+.click {
+     background-color: rgb(117, 255, 218);
     border-radius: 25px;
     height: 40px;
     width: 40%;
     display: inline-block;
     align-content: center;
-    margin-left: 18px ;
+    margin-left: 18px;
 }
-.textt{
+
+.textt {
     padding-left: 5px;
     height: 92px;
 }
-.Explo button{
+
+.Explo button {
     background-color: rgb(234, 234, 57);
-    border-radius:25px;
-    height:60px;
+    border-radius: 25px;
+    height: 60px;
     width: 200px;
     content: center;
     text-align: center;
     margin-bottom: 10px;
 }
-.Explo{
+
+.Explo {
     display: flex;
-  justify-content: center; 
-  align-items: center; 
+    justify-content: center;
+    align-items: center;
 }
-footer{
+
+footer {
     display: flex;
     background-color: rgb(19, 26, 34);
 }
+
 .icon ul {
-  display: flex;
-  background-color: rgb(19, 26, 34);
-  justify-items: center;
-  margin-left:400px;
-  
+    display: flex;
+    background-color: rgb(19, 26, 34);
+    justify-items: center;
+    margin-left: 400px;
+
 }
-.icon ul li{
+
+.icon ul li {
     gap: 30px;
     margin-left: 10px;
     padding-left: 20px;
 }
-.icon{
-     background-color: rgb(19, 26, 34);
+
+.icon {
+    background-color: rgb(19, 26, 34);
 }
-.icon ul li img{
+
+.icon ul li img {
     border: none;
     border-radius: 35%
+}
+
+@media(max-width : 375px) {
+    .container {
+        grid-auto-flow: column;
+        grid-auto-columns: 250px;
+        overflow-x: auto;
+    }
+
 }
