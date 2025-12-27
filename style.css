@@ -5,17 +5,18 @@
 
 header {
     background-color: rgb(161, 254, 254);
-     position: sticky;
+    position: sticky;
 }
 
 .head {
     display: flex;
     justify-content: space-between;
     height: 70px;
-   width: 100%;
+    width: 100%;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
-   position: fixed;
-   top: 0px;
+    position: fixed;
+    top: 0px;
+    z-index: 9999;
 
 }
 
@@ -58,12 +59,14 @@ header {
     border-radius: 6px;
     transition: transform 0.5s;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1;
 
 
 }
 
 .main:hover {
     transform: translate(20px, 10px);
+    z-index: 2;
     /* moves right 50px and down 20px */
 }
 
@@ -73,6 +76,7 @@ header {
     display: flex;
     gap: 10px;
     display: flex;
+    z-index: 1;
 
 }
 
@@ -83,22 +87,27 @@ header {
     border-radius: 50%;
     position: relative;
     margin-top: 40px;
+    z-index: 1;
 
 
 }
 
 .img:nth-child(1) {
     top: 0px;
+    z-index: 1;
 }
 
 .img:nth-child(2) {
     top: 0px;
     right: 80px;
+    z-index: 1;
+
 }
 
 .img:nth-child(3) {
     top: 0px;
     right: 150px;
+    z-index: 1;
 }
 
 .container {
@@ -181,7 +190,7 @@ footer ul li {
 }
 
 .click {
-     background-color: rgb(117, 255, 218);
+    background-color: rgb(117, 255, 218);
     border-radius: 25px;
     height: 40px;
     width: 40%;
