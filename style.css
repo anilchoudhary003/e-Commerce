@@ -6,6 +6,7 @@
 header {
     background-color: rgb(161, 254, 254);
     position: sticky;
+     z-index: 9999;
 }
 
 .head {
@@ -246,13 +247,4 @@ footer {
 .icon ul li img {
     border: none;
     border-radius: 35%
-}
-
-@media(max-width : 375px) {
-    .container {
-        grid-auto-flow: column;
-        grid-auto-columns: 250px;
-        overflow-x: auto;
-    }
-
 }
