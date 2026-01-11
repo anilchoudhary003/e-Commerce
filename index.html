@@ -23,13 +23,49 @@
                     <li>Grocery</li>
                     <li>Sport</li>
                 </ul>
-                <input type="text" placeholder="Search here...">
-                <input type="image" src="./assets/search.png" height="25">
-                <button onclick="location.href='add_cart.html'" style="border: none;"><img src="./assets/cartt.webp" alt="icon" height="25" ><a href="addcart.html"></a></button>
+                
+                    <div class="search">
+                        <input style=" outline: none;border:none; background-color: rgb(255,255,255);" type="text"
+                    placeholder="Search here...">
+                    </div>
+                <input style="background-color: rgb(255,255,255);" type="image" src="./assets/search.png" height="25">
+                <button onclick="location.href='add_cart.html'"
+                    style="border: none; background-color: rgb(255,255,255);"><img src="./assets/cartt.webp" alt="icon"
+                        height="25"><a href="addcart.html"></a></button>
                 <div class="number"></div>
+                <button class="login">login</button>
             </div>
         </div>
     </header>
+
+
+    <div class="log-in log1 hidden">
+        <h1>login</h1>
+        <form action="#">
+            <div class="email"><input type="email" placeholder="Enter Email"><ion-icon name="mail"></ion-icon></div>
+            <div class="password"><input type="password" placeholder="Enter password"><ion-icon
+                    name="lock-closed"></ion-icon></div>
+            <div class="Remember"><input type="checkbox"> Remember me <span><a href="#">Forgot Password</a></span>
+            </div>
+            <button class="submit" type="submit">login</button>
+            <div class="Register1">Do not have account <a href="#"> Sign-in</a></div>
+        </form>
+    </div>
+
+    <div class="log-in log2 hidden">
+        <h1>Sign-in</h1>
+        <form action="#">
+            <div class="user"><input type="text" placeholder="Enter Username"><ion-icon name="person"></ion-icon></div>
+            <div class="email"><input type="email" placeholder="Enter Email"><ion-icon name="mail"></ion-icon></div>
+            <div class="password"><input type="password" placeholder="Enter password"><ion-icon
+                    name="lock-closed"></ion-icon></div>
+            <div class="Remember"><input type="checkbox"> Remember me <span><a href="#">Forgot Password</a></span></div>
+            <button class="submit" type="submit">Sign-in</button>
+            <div class="Register2">Do you have account <a href="#"> Login</a></div>
+        </form>
+    </div>
+
+
     <div class="main">
         <div class="main1">
             <img src="./assets/electronics.jpg" alt="" class="img">
@@ -355,10 +391,11 @@
                 <button class="click">Buy</button>
             </div>
         </div>
+         <!-- <div class="Explo">
+         <button>Explore more</button>
+         </div> -->
     </div>
-    <div class="Explo">
-        <button>Explore more</button>
-    </div>
+
     <footer>
         <div class="foot">
             <ul>
@@ -380,6 +417,8 @@
         </div>
     </footer>
     <script src="app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

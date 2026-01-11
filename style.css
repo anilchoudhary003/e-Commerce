@@ -6,7 +6,7 @@
 header {
     background-color: rgb(161, 254, 254);
     position: sticky;
-     z-index: 9999;
+    z-index: 9999;
 }
 
 .head {
@@ -18,6 +18,7 @@ header {
     position: fixed;
     top: 0px;
     z-index: 9999;
+    background-color: rgb(255, 255, 255);
 
 }
 
@@ -27,6 +28,7 @@ header {
     font-size: 40px;
     margin-left: 20px;
     align-content: center;
+    background-color: rgb(255, 255, 255);
 }
 
 .sec {
@@ -35,6 +37,7 @@ header {
     align-items: center;
     gap: 5px;
     margin: 20px;
+    background-color: rgb(255, 255, 255);
 
 }
 
@@ -43,35 +46,168 @@ header {
     display: flex;
     padding-right: 25px;
     gap: 40px;
+    background-color: rgb(255, 255, 255);
+}
+
+.sec ul li {
+    background-color: rgb(255, 255, 255);
 }
 
 .search {
-    border-radius: 10px;
+    
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid black;
 }
 
-.number{
+.login {
+    border-radius: 20px;
+    /* font-weight: 400; */
+    font-size: 1.2rem;
+    width: 5rem;
+    background-color: rgb(95, 105, 251);
+    /* background-color: rgb(29, 209, 161); */
+    color: #ffffff;
+    border: none;
+    height: 2rem;
+
+}
+
+.login:hover {
+    background-color: #b0f7f7;
+    color: black;
+    cursor: pointer;
+
+}
+
+.number {
     height: 1rem;
     width: 1rem;
-    background-color:  rgb(20, 225, 170);
+    background-color: rgb(20, 225, 170);
     border-radius: 50%;
     position: relative;
     bottom: 0.8rem;
-    right: 1.5rem;
+    right: 2.2rem;
     color: black;
     font-weight: bolder;
     font-size: 13px;
     text-align: center;
-     opacity: 0; 
-     animation: bounce 1.5s infinite ease-in-out;
+    opacity: 0;
+    animation: bounce 1.5s infinite ease-in-out;
 }
-@keyframes bounce{
-    0%,100%{
+
+@keyframes bounce {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
-    50%{
+
+    50% {
         transform: translateY(-3px);
     }
 }
+
+.log-in {
+    height: 23rem;
+    width: 18rem;
+    align-content: center;
+    justify-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    margin: 12rem 50% 0rem 40%;
+    border-radius: 7px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    /* backdrop-filter: blur(20px); */
+    /* display: none; */
+    overflow:hidden ;
+
+}
+
+.log-in h1 {
+    position: relative;
+    bottom: 5rem;
+}
+
+
+
+.user{
+     position: relative;
+    bottom: 3.5rem;
+    left: 0rem;
+    border-bottom: 2px solid black;
+     
+}
+
+.user input{
+     border: none;
+    outline: none;
+}
+
+.email {
+    position: relative;
+    bottom: 3rem;
+    left: 0rem;
+    border-bottom: 2px solid black;
+
+}
+
+.email input {
+    border: none;
+    outline: none;
+}
+
+.password {
+    position: relative;
+    bottom: 2rem;
+    left: 0rem;
+    border-bottom: 2px solid black;
+}
+
+.password input {
+    border: none;
+    outline: none;
+}
+
+
+.Remember {
+    position: relative;
+    bottom: 1rem;
+    left: 0rem;
+    font-size: 0.8rem;
+    margin-left: 0px;
+}
+
+.Remember span {
+    margin-left: 18px;
+}
+
+.submit {
+    border-radius: 20px;
+    font-size: 1.2rem;
+    width: 8rem;
+    background-color: rgb(95, 105, 251);
+    color: #ffffff;
+    border: none;
+    height: 2rem;
+    cursor: pointer;
+    position: relative;
+    top: 3rem;
+    left: 2.2rem;
+}
+
+
+.Register1 {
+    position: relative;
+    top: 5.5rem;
+}
+.Register2{
+     position: relative;
+    top: 5rem;
+}
+/* 
+.hidden {
+  display: none;
+} */
+
 
 .main {
     align-content: center;
@@ -86,14 +222,9 @@ header {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
     z-index: 1;
 
-
 }
 
-/* .main:hover {
-    transform:  scale(1.1, 1.1);
-    z-index: 2;
-    /* moves right 50px and down 20px 
-} */
+
 
 .main1 {
     height: 0px;
@@ -140,9 +271,8 @@ header {
     justify-content: center;
     grid-template-columns: 320px 320px 320px 320px;
     row-gap: 30px;
-    padding:3rem;
-     margin-left: 2rem;
-
+    padding: 3rem;
+    margin-left: 2rem;
 
 }
 
@@ -159,8 +289,10 @@ header {
 }
 
 .product:hover {
-    transform:scale(1.1,1.1);
-    
+    transform: scale(1.1, 1.1);
+
+    font-family: sans-serif;
+
 
 }
 
@@ -204,11 +336,12 @@ footer ul li {
     margin-top: 0px;
     align-content: center;
     font-size: 4rem;
-    margin-left: 7rem;
+    margin-left: 5rem;
     white-space: nowrap;
     color: rgb(245, 255, 255);
     background-color: rgb(255, 217, 168);
     margin-bottom: 3rem;
+    font-family: "Indie Flower", cursive;
 }
 
 .text {
@@ -277,4 +410,12 @@ footer {
 .icon ul li img {
     border: none;
     border-radius: 35%
+}
+
+.on_click {
+    background-color: rgb(20, 233, 222);
+}
+
+.hidden {
+  display: none;
 }
