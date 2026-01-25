@@ -2,6 +2,9 @@
     margin: 0;
     background-color: #f7fafa;
 }
+body{
+    width: 100%;
+}
 
 header {
     background-color: rgb(161, 254, 254);
@@ -54,13 +57,13 @@ header {
 }
 
 .search {
-    
+
     background-color: rgb(255, 255, 255);
     border-bottom: 2px solid black;
 }
 
 .login {
-    border-radius: 20px;
+    border-radius: 6px;
     /* font-weight: 400; */
     font-size: 1.2rem;
     width: 5rem;
@@ -69,6 +72,7 @@ header {
     color: #ffffff;
     border: none;
     height: 2rem;
+    transition: 0.5s;
 
 }
 
@@ -116,9 +120,7 @@ header {
     margin: 12rem 50% 0rem 40%;
     border-radius: 7px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
-    /* backdrop-filter: blur(20px); */
-    /* display: none; */
-    overflow:hidden ;
+    overflow: hidden;
 
 }
 
@@ -129,16 +131,16 @@ header {
 
 
 
-.user{
-     position: relative;
-    bottom: 3.5rem;
+.user {
+    position: relative;
+    bottom: 3.7rem;
     left: 0rem;
     border-bottom: 2px solid black;
-     
+
 }
 
-.user input{
-     border: none;
+.user input {
+    border: none;
     outline: none;
 }
 
@@ -199,14 +201,12 @@ header {
     position: relative;
     top: 5.5rem;
 }
-.Register2{
-     position: relative;
+
+.Register2 {
+    position: relative;
     top: 5rem;
 }
-/* 
-.hidden {
-  display: none;
-} */
+
 
 
 .main {
@@ -267,12 +267,15 @@ header {
 }
 
 .container {
+    
     display: grid;
     justify-content: center;
     grid-template-columns: 320px 320px 320px 320px;
-    row-gap: 30px;
-    padding: 3rem;
-    margin-left: 2rem;
+    width: 100%;
+    row-gap: 40px;
+    align-items: center;
+    /* padding: 3rem; */
+    /* margin-left: 2rem; */
 
 }
 
@@ -290,8 +293,8 @@ header {
 
 .product:hover {
     transform: scale(1.1, 1.1);
-
-    font-family: sans-serif;
+    font-family: 'poppins', sans-serif;
+    /* font-family: sans-serif; */
 
 
 }
@@ -359,6 +362,7 @@ footer ul li {
     align-content: center;
     margin-left: 18px;
     margin-top: 0.5rem;
+    cursor: pointer;
 }
 
 .textt {
@@ -413,9 +417,43 @@ footer {
 }
 
 .on_click {
-    background-color: rgb(20, 233, 222);
+    background-color: rgb(116, 137, 162);
+    color: #fff;
+
 }
 
 .hidden {
-  display: none;
+    display: none;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+    width: 100%;
+  }
+  .first{
+    font-size: 20px;
+  }
+  .style{
+    font-size: 50%;
+    display: 40%;
+  }
+   .main1{
+    display: 60%;
+   }
+  .main1 img{
+    height:135px;
+    width: 135px;;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+/* .product {
+    width: 150px;
+    height: 220px;
+    gap: 20px;
+} */
+
 }
