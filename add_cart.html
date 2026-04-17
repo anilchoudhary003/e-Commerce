@@ -4,25 +4,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add to Cart</title>
+    <title>My Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .cart-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 20px;
+            margin-top: 30px;
+            background-color: #f7fafa;
+            flex-direction: row;
+        }
+
+        .Box {
+            background-color: #ffffff;
+            height: 350px;
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .Box img {
+            width: 300px;
+            height: 350px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .Box p {
+            margin: 10px;
+            font-size: 16px;
+            overflow: auto;
+        }
+
+        .text-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            flex: 1;
+            padding: 15px;
+            background-color: #f7fafa;
+            overflow: hidden;
+        }
+
+        .empty-cart {
+            text-align: center;
+            padding: 50px;
+            font-size: 24px;
+            color: #666;
+            width: 100%;
+        }
+
+        .back-btn {
+            position: relative;
+            top: 30px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: rgb(95, 105, 251);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            z-index: 9999;
+        }
+
+        .back-btn:hover {
+            background-color: #b0f7f7;
+            color: black;
+        }
+
+        .h1 {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 32px;
+            color: rgb(39, 42, 90);
+        }
+    </style>
 </head>
-<style>
-    .Box {
-        background-color: aqua;
-        height: 20rem;
-        margin: 2rem 3rem 2rem 3rem;
-        border-radius: 15px;
-    }
-</style>
 
 <body class="add-cart">
-    <div >
-        <div class="Box">
-            <img src="" alt="">
-            1</div>
-        <div class="Box">2</div>
-        <div class="Box">3</div>
-        <div class="Box">4</div>
+    <button class="back-btn" onclick="location.href='index.html'">← Back to Shopping</button>
+    <h1 class="h1">My Cart</h1>
+    <div class="cart-container">
+        <!-- Cart items will be added here dynamically -->
     </div>
 
     <script src="app.js"></script>
